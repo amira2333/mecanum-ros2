@@ -1,0 +1,43 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/enetcom/mecanum-ros2/build/mecanum_navigation
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/launch/mecanum_nav.launch.py
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/config/nav2.rviz
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/config/nav2_param.yaml
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/ament_index/resource_index/package_run_dependencies/mecanum_navigation
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/ament_index/resource_index/parent_prefix_path/mecanum_navigation
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/environment/ament_prefix_path.sh
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/environment/ament_prefix_path.dsv
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/environment/path.sh
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/environment/path.dsv
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/local_setup.bash
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/local_setup.sh
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/local_setup.zsh
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/local_setup.dsv
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/package.dsv
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/ament_index/resource_index/packages/mecanum_navigation
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/cmake/mecanum_navigationConfig.cmake
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/cmake/mecanum_navigationConfig-version.cmake
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/package.xml

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rosmaster_x3">
+
+  <xacro:property name="M_PI" value="3.1415926535897931" />
+
+  <xacro:include filename="$(find mechanum_description)/urdf/mech/rosmaster_x3_base.urdf.xacro"/>
+  <xacro:include filename="$(find mechanum_description)/urdf/mech/mecanum_wheel.urdf.xacro"/>
+  <xacro:include filename="$(find mechanum_description)/urdf/sensors/lidar.urdf.xacro"/>
+  <!-- IMU supprimé : votre robot physique n'a pas d'IMU -->
+  <!-- Camera supprimée : votre robot n'a pas de camera -->
+
+  <xacro:rosmaster_x3_base />
+
+  <xacro:mecanum_wheel side="front_left"  x_reflect="1"  y_reflect="1"/>
+  <xacro:mecanum_wheel side="front_right" x_reflect="1"  y_reflect="-1"/>
+  <xacro:mecanum_wheel side="back_left"   x_reflect="-1" y_reflect="1"/>
+  <xacro:mecanum_wheel side="back_right"  x_reflect="-1" y_reflect="-1"/>
+
+  <!-- Lidar monté sur base_link à hauteur correcte pour la carte 2D -->
+  <xacro:lidar_sensor
+    parent="base_link"
+    frame_id="laser_frame"
+    xyz_offset="0 0 0.15"
+    rpy_offset="0 0 0"
+    mesh_xyz_offset="0 0 0"
+    mesh_rpy_offset="${-M_PI/2} 0 0"
+    topic_name="scan"
+    visualize="false"/>
+
+  <!-- ══════════════════════════════════════════════════════════
+       Plugin joint_state_publisher Gazebo
+       AJOUT : publie /joint_states pour les 4 roues continues
+       Sans ça, robot_state_publisher ne calcule pas les TF roues
+       et RViz affiche "No transform from wheel_*_link to map"
+  ══════════════════════════════════════════════════════════ -->
+  <gazebo>
+    <plugin name="gazebo_ros_joint_state_publisher"
+            filename="libgazebo_ros_joint_state_publisher.so">
+      <update_rate>20</update_rate>
+      <joint_name>front_left_wheel_joint</joint_name>
+      <joint_name>front_right_wheel_joint</joint_name>
+      <joint_name>back_left_wheel_joint</joint_name>
+      <joint_name>back_right_wheel_joint</joint_name>
+    </plugin>
+  </gazebo>
+
+  <!-- ══════════════════════════════════════════════════════════
+       Plugin Planar Move — mouvement omnidirectionnel mecanum
+       CORRECTION 1 : robot_base_frame = base_footprint
+         (l'EKF publie odom→base_footprint, pas odom→base_link)
+       CORRECTION 2 : publish_odom_tf = false
+         (évite le conflit TF avec l'EKF robot_localization
+          qui publie aussi la transform odom→base_footprint)
+  ══════════════════════════════════════════════════════════ -->
+  <gazebo>
+    <plugin name="planar_controller" filename="libgazebo_ros_planar_move.so">
+      <ros>
+        <remapping>cmd_vel:=cmd_vel</remapping>
+      </ros>
+      <update_rate>50</update_rate>
+      <publish_rate>20</publish_rate>
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>false</publish_odom_tf>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_footprint</robot_base_frame>
+    </plugin>
+  </gazebo>
+
+</robot>

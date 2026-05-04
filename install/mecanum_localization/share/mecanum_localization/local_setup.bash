@@ -1,0 +1,1 @@
+/home/enetcom/mecanum-ros2/build/mecanum_localization/ament_cmake_environment_hooks/local_setup.bash

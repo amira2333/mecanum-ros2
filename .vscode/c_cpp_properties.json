@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/dika/Documents/ROS2_LEARN/install/ros2_cpp_example/include/**",
+        "/home/dika/Documents/ROS2_LEARN/install/bumperbot_navigation/include/**",
+        "/home/dika/Documents/ROS2_LEARN/install/bumperbot_localization/include/**",
+        "/home/dika/Documents/ROS2_LEARN/install/bumperbot_controller/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/dika/my_projects/mechanum_ws/src/wpb_mani/wpb_local_planner/include/**",
+        "/home/dika/my_projects/mechanum_ws/src/wpb_mani/wpb_mani_bringup/include/**",
+        "/home/dika/my_projects/mechanum_ws/src/wpb_mani/wpb_mani_simulator/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

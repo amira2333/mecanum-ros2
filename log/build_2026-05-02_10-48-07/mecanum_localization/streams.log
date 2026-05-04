@@ -1,0 +1,51 @@
+[0.023s] Invoking command in '/home/enetcom/mecanum-ros2/build/mecanum_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/enetcom/mecanum-ros2/src/mecanum_localization -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/enetcom/mecanum-ros2/install/mecanum_localization
+[0.140s] -- The C compiler identification is GNU 11.4.0
+[0.268s] -- The CXX compiler identification is GNU 11.4.0
+[0.282s] -- Detecting C compiler ABI info
+[0.430s] -- Detecting C compiler ABI info - done
+[0.447s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.448s] -- Detecting C compile features
+[0.448s] -- Detecting C compile features - done
+[0.454s] -- Detecting CXX compiler ABI info
+[0.589s] -- Detecting CXX compiler ABI info - done
+[0.600s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.600s] -- Detecting CXX compile features
+[0.601s] -- Detecting CXX compile features - done
+[0.608s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.889s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.035s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.089s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.251s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.254s] -- Added test 'lint_cmake' to check CMake code style
+[1.256s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.260s] -- Added test 'xmllint' to check XML markup files
+[1.266s] -- Configuring done
+[1.277s] -- Generating done
+[1.282s] -- Build files have been written to: /home/enetcom/mecanum-ros2/build/mecanum_localization
+[1.292s] Invoked command in '/home/enetcom/mecanum-ros2/build/mecanum_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/enetcom/mecanum-ros2/src/mecanum_localization -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/enetcom/mecanum-ros2/install/mecanum_localization
+[1.295s] Invoking command in '/home/enetcom/mecanum-ros2/build/mecanum_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/enetcom/mecanum-ros2/build/mecanum_localization -- -j4 -l4
+[1.355s] Invoked command in '/home/enetcom/mecanum-ros2/build/mecanum_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/enetcom/mecanum-ros2/build/mecanum_localization -- -j4 -l4
+[1.357s] Invoking command in '/home/enetcom/mecanum-ros2/build/mecanum_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/enetcom/mecanum-ros2/build/mecanum_localization
+[1.370s] -- Install configuration: ""
+[1.371s] -- Execute custom install script
+[1.372s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/launch/robot_localization.launch.py
+[1.385s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/config/amcl.yaml
+[1.401s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/config/mecanum_localization.yaml
+[1.421s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/map/map_3x3_mecanum.pgm
+[1.438s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/map/map_3x3_mecanum.yaml
+[1.451s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/ament_index/resource_index/package_run_dependencies/mecanum_localization
+[1.467s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/ament_index/resource_index/parent_prefix_path/mecanum_localization
+[1.482s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/environment/ament_prefix_path.sh
+[1.493s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/environment/ament_prefix_path.dsv
+[1.506s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/environment/path.sh
+[1.524s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/environment/path.dsv
+[1.539s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/local_setup.bash
+[1.551s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/local_setup.sh
+[1.567s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/local_setup.zsh
+[1.584s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/local_setup.dsv
+[1.599s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/package.dsv
+[1.610s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/ament_index/resource_index/packages/mecanum_localization
+[1.630s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/cmake/mecanum_localizationConfig.cmake
+[1.648s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/cmake/mecanum_localizationConfig-version.cmake
+[1.667s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/package.xml
+[1.696s] Invoked command in '/home/enetcom/mecanum-ros2/build/mecanum_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/enetcom/mecanum-ros2/build/mecanum_localization
