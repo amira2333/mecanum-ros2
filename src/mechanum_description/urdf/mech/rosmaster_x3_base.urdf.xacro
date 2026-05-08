@@ -2,43 +2,49 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <!-- ═══════════════════════════════════════════════════════════
-       Dimensions réelles de votre robot (à ajuster si besoin)
-       Châssis : 52cm x 40cm x 10cm  — noir
-       Roues    : rayon 3.25cm, largeur 3cm
-       Mâts     : 2 cylindres noirs
-       Plateforme + bacs bleus
+       Dimensions mesurées sur le vrai robot
+       Ajustez les valeurs si vos mesures diffèrent
   ═══════════════════════════════════════════════════════════ -->
 
-  <!-- Châssis -->
-  <xacro:property name="base_length"    value="0.520" />
-  <xacro:property name="base_width"     value="0.400" />
-  <xacro:property name="base_height"    value="0.100" />
-  <xacro:property name="base_mass"      value="5.0"   />
-
   <!-- Roues -->
-  <xacro:property name="wheel_radius"   value="0.0325" />
-  <xacro:property name="wheel_width"    value="0.0304" />
+  <xacro:property name="wheel_radius"     value="0.0325" />
+  <xacro:property name="wheel_width"      value="0.0304" />
+  <xacro:property name="wheel_separation" value="0.169"  />
+  <xacro:property name="wheel_xoff"       value="0.08"   />
 
-  <!-- Mâts -->
-  <xacro:property name="pole_radius"    value="0.018"  />
-  <xacro:property name="pole_height"    value="0.60"   />
-  <xacro:property name="pole_mass"      value="0.15"   />
+  <!-- Châssis principal -->
+  <xacro:property name="base_length"  value="0.300" />   <!-- X : avant/arrière -->
+  <xacro:property name="base_width"   value="0.200" />   <!-- Y : gauche/droite (entre roues) -->
+  <xacro:property name="base_height"  value="0.080" />   <!-- Z : hauteur châssis -->
+  <xacro:property name="base_mass"    value="4.6"   />
 
-  <!-- Plateforme supérieure -->
-  <xacro:property name="shelf_length"   value="0.38"   />
-  <xacro:property name="shelf_width"    value="0.30"   />
-  <xacro:property name="shelf_thick"    value="0.008"  />
+  <!-- Mâts (4 mâts aux coins) -->
+  <xacro:property name="pole_radius"  value="0.012" />
+  <xacro:property name="pole_height"  value="0.55"  />   <!-- hauteur des mâts -->
+  <xacro:property name="pole_mass"    value="0.12"  />
+  <!-- Position des 4 mâts dans le châssis -->
+  <xacro:property name="pole_x"       value="0.10"  />   <!-- avant/arrière des mâts -->
+  <xacro:property name="pole_y"       value="0.07"  />   <!-- gauche/droite des mâts -->
+  <xacro:property name="pole_z_center" value="${base_height + pole_height/2}" />
 
-  <!-- Bacs bleus -->
-  <xacro:property name="bin_length"     value="0.36"   />
-  <xacro:property name="bin_width"      value="0.28"   />
-  <xacro:property name="bin_height"     value="0.15"   />
-  <xacro:property name="bin_mass"       value="0.3"    />
+  <!-- Plaque intermédiaire noire -->
+  <xacro:property name="mid_shelf_l"  value="0.22"  />
+  <xacro:property name="mid_shelf_w"  value="0.16"  />
+  <xacro:property name="mid_shelf_h"  value="0.008" />
+  <xacro:property name="mid_shelf_z"  value="${base_height + pole_height * 0.45}" />
 
-  <!-- Offsets calculés -->
-  <xacro:property name="pole_z"         value="${base_height + pole_height/2}" />
-  <xacro:property name="shelf_z"        value="${base_height + pole_height}" />
-  <xacro:property name="bin_z"          value="${shelf_z + shelf_thick/2 + bin_height/2}" />
+  <!-- Plateforme supérieure (base des bacs) -->
+  <xacro:property name="top_shelf_l"  value="0.28"  />
+  <xacro:property name="top_shelf_w"  value="0.20"  />
+  <xacro:property name="top_shelf_h"  value="0.008" />
+  <xacro:property name="top_shelf_z"  value="${base_height + pole_height}" />
+
+  <!-- 3 bacs bleus -->
+  <xacro:property name="bin_l"        value="0.082" />   <!-- largeur d'un bac -->
+  <xacro:property name="bin_w"        value="0.19"  />
+  <xacro:property name="bin_h"        value="0.10"  />
+  <xacro:property name="bin_z"        value="${top_shelf_z + top_shelf_h/2 + bin_h/2}" />
+  <xacro:property name="bin_mass"     value="0.15"  />
 
   <!-- Macros inertie -->
   <xacro:macro name="box_inertia" params="m l w h">
@@ -59,20 +65,84 @@
     </inertial>
   </xacro:macro>
 
+  <!-- ══ MACRO MÂT (réutilisée 4 fois) ══ -->
+  <xacro:macro name="pole" params="name px py">
+    <link name="pole_${name}_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="${pole_radius}" length="${pole_height}"/>
+        </geometry>
+        <material name="mat_pole">
+          <color rgba="0.15 0.15 0.15 1.0"/>
+        </material>
+      </visual>
+      <collision>
+        <geometry>
+          <cylinder radius="${pole_radius}" length="${pole_height}"/>
+        </geometry>
+      </collision>
+      <xacro:cyl_inertia m="${pole_mass}" r="${pole_radius}" h="${pole_height}"/>
+    </link>
+    <joint name="pole_${name}_joint" type="fixed">
+      <parent link="base_link"/>
+      <child  link="pole_${name}_link"/>
+      <origin xyz="${px} ${py} ${pole_z_center}" rpy="0 0 0"/>
+    </joint>
+    <gazebo reference="pole_${name}_link">
+      <material>Gazebo/DarkGray</material>
+    </gazebo>
+  </xacro:macro>
+
+  <!-- ══ MACRO BAC (réutilisée 3 fois) ══ -->
+  <xacro:macro name="bin" params="name bx">
+    <link name="bin_${name}_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${bin_l} ${bin_w} ${bin_h}"/>
+        </geometry>
+        <material name="mat_blue">
+          <color rgba="0.05 0.20 0.75 1.0"/>
+        </material>
+      </visual>
+      <collision>
+        <geometry><box size="${bin_l} ${bin_w} ${bin_h}"/></geometry>
+      </collision>
+      <xacro:box_inertia m="${bin_mass}" l="${bin_l}" w="${bin_w}" h="${bin_h}"/>
+    </link>
+    <joint name="bin_${name}_joint" type="fixed">
+      <parent link="base_link"/>
+      <child  link="bin_${name}_link"/>
+      <origin xyz="${bx} 0 ${bin_z}" rpy="0 0 0"/>
+    </joint>
+    <gazebo reference="bin_${name}_link">
+      <material>Gazebo/Blue</material>
+    </gazebo>
+  </xacro:macro>
+
+  <!-- ══════════════════════════════════════════════════════════
+       MACRO PRINCIPALE
+  ══════════════════════════════════════════════════════════ -->
   <xacro:macro name="rosmaster_x3_base">
 
-    <!-- ── base_footprint (frame sol) ── -->
+    <!-- ── base_footprint ── -->
     <link name="base_footprint"/>
+    <joint name="base_joint" type="fixed">
+      <parent link="base_footprint"/>
+      <child  link="base_link"/>
+      <origin xyz="0 0 ${wheel_radius}" rpy="0 0 0"/>
+    </joint>
 
-    <!-- ── Châssis principal ── -->
+    <!-- ── Châssis principal (boîte noire) ── -->
     <link name="base_link">
       <visual>
         <origin xyz="0 0 ${base_height/2}" rpy="0 0 0"/>
         <geometry>
           <box size="${base_length} ${base_width} ${base_height}"/>
         </geometry>
-        <material name="mat_black">
-          <color rgba="0.08 0.08 0.08 1.0"/>
+        <material name="mat_chassis">
+          <color rgba="0.06 0.06 0.06 1.0"/>
         </material>
       </visual>
       <collision>
@@ -87,103 +157,69 @@
       <material>Gazebo/Black</material>
     </gazebo>
 
-    <joint name="base_joint" type="fixed">
-      <parent link="base_footprint"/>
-      <child  link="base_link"/>
-      <origin xyz="0 0 ${wheel_radius}" rpy="0 0 0"/>
-    </joint>
+    <!-- ── 4 Mâts noirs aux coins ── -->
+    <xacro:pole name="fl" px=" ${pole_x}" py=" ${pole_y}"/>
+    <xacro:pole name="fr" px=" ${pole_x}" py="-${pole_y}"/>
+    <xacro:pole name="rl" px="-${pole_x}" py=" ${pole_y}"/>
+    <xacro:pole name="rr" px="-${pole_x}" py="-${pole_y}"/>
 
-    <!-- ── Mât gauche ── -->
-    <link name="pole_left_link">
+    <!-- ── Plaque intermédiaire noire (mi-hauteur) ── -->
+    <link name="mid_shelf_link">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <cylinder radius="${pole_radius}" length="${pole_height}"/>
+          <box size="${mid_shelf_l} ${mid_shelf_w} ${mid_shelf_h}"/>
         </geometry>
-        <material name="mat_gray">
-          <color rgba="0.3 0.3 0.3 1.0"/>
+        <material name="mat_shelf">
+          <color rgba="0.10 0.10 0.10 1.0"/>
         </material>
       </visual>
       <collision>
-        <geometry><cylinder radius="${pole_radius}" length="${pole_height}"/></geometry>
+        <geometry><box size="${mid_shelf_l} ${mid_shelf_w} ${mid_shelf_h}"/></geometry>
       </collision>
-      <xacro:cyl_inertia m="${pole_mass}" r="${pole_radius}" h="${pole_height}"/>
+      <xacro:box_inertia m="0.2" l="${mid_shelf_l}" w="${mid_shelf_w}" h="${mid_shelf_h}"/>
     </link>
-    <joint name="pole_left_joint" type="fixed">
+    <joint name="mid_shelf_joint" type="fixed">
       <parent link="base_link"/>
-      <child  link="pole_left_link"/>
-      <origin xyz="-0.08 0.12 ${pole_z}" rpy="0 0 0"/>
+      <child  link="mid_shelf_link"/>
+      <origin xyz="0 0 ${mid_shelf_z}" rpy="0 0 0"/>
     </joint>
-    <gazebo reference="pole_left_link"><material>Gazebo/Grey</material></gazebo>
+    <gazebo reference="mid_shelf_link">
+      <material>Gazebo/DarkGray</material>
+    </gazebo>
 
-    <!-- ── Mât droit ── -->
-    <link name="pole_right_link">
+    <!-- ── Plateforme supérieure (support des bacs) ── -->
+    <link name="top_shelf_link">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <cylinder radius="${pole_radius}" length="${pole_height}"/>
+          <box size="${top_shelf_l} ${top_shelf_w} ${top_shelf_h}"/>
         </geometry>
-        <material name="mat_gray">
-          <color rgba="0.3 0.3 0.3 1.0"/>
+        <material name="mat_shelf">
+          <color rgba="0.10 0.10 0.10 1.0"/>
         </material>
       </visual>
       <collision>
-        <geometry><cylinder radius="${pole_radius}" length="${pole_height}"/></geometry>
+        <geometry><box size="${top_shelf_l} ${top_shelf_w} ${top_shelf_h}"/></geometry>
       </collision>
-      <xacro:cyl_inertia m="${pole_mass}" r="${pole_radius}" h="${pole_height}"/>
+      <xacro:box_inertia m="0.25" l="${top_shelf_l}" w="${top_shelf_w}" h="${top_shelf_h}"/>
     </link>
-    <joint name="pole_right_joint" type="fixed">
+    <joint name="top_shelf_joint" type="fixed">
       <parent link="base_link"/>
-      <child  link="pole_right_link"/>
-      <origin xyz="-0.08 -0.12 ${pole_z}" rpy="0 0 0"/>
+      <child  link="top_shelf_link"/>
+      <origin xyz="0 0 ${top_shelf_z}" rpy="0 0 0"/>
     </joint>
-    <gazebo reference="pole_right_link"><material>Gazebo/Grey</material></gazebo>
+    <gazebo reference="top_shelf_link">
+      <material>Gazebo/Black</material>
+    </gazebo>
 
-    <!-- ── Plateforme intermédiaire (plaque noire) ── -->
-    <link name="shelf_link">
-      <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-          <box size="${shelf_length} ${shelf_width} ${shelf_thick}"/>
-        </geometry>
-        <material name="mat_darkgray">
-          <color rgba="0.2 0.2 0.2 1.0"/>
-        </material>
-      </visual>
-      <collision>
-        <geometry><box size="${shelf_length} ${shelf_width} ${shelf_thick}"/></geometry>
-      </collision>
-      <xacro:box_inertia m="0.3" l="${shelf_length}" w="${shelf_width}" h="${shelf_thick}"/>
-    </link>
-    <joint name="shelf_joint" type="fixed">
-      <parent link="base_link"/>
-      <child  link="shelf_link"/>
-      <origin xyz="0 0 ${shelf_z}" rpy="0 0 0"/>
-    </joint>
-    <gazebo reference="shelf_link"><material>Gazebo/DarkGray</material></gazebo>
-
-    <!-- ── Bacs bleus (plateforme supérieure) ── -->
-    <link name="bins_link">
-      <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-          <box size="${bin_length} ${bin_width} ${bin_height}"/>
-        </geometry>
-        <material name="mat_blue">
-          <color rgba="0.05 0.25 0.80 1.0"/>
-        </material>
-      </visual>
-      <collision>
-        <geometry><box size="${bin_length} ${bin_width} ${bin_height}"/></geometry>
-      </collision>
-      <xacro:box_inertia m="${bin_mass}" l="${bin_length}" w="${bin_width}" h="${bin_height}"/>
-    </link>
-    <joint name="bins_joint" type="fixed">
-      <parent link="base_link"/>
-      <child  link="bins_link"/>
-      <origin xyz="0 0 ${bin_z}" rpy="0 0 0"/>
-    </joint>
-    <gazebo reference="bins_link"><material>Gazebo/Blue</material></gazebo>
+    <!-- ── 3 Bacs bleus côte à côte ── -->
+    <!-- bac gauche -->
+    <xacro:bin name="left"   bx="-${bin_l + 0.005}"/>
+    <!-- bac centre -->
+    <xacro:bin name="center" bx="0"/>
+    <!-- bac droit -->
+    <xacro:bin name="right"  bx=" ${bin_l + 0.005}"/>
 
   </xacro:macro>
 </robot>

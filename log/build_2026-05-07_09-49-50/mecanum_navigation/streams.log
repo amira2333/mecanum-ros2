@@ -1,0 +1,24 @@
+[0.027s] Invoking command in '/home/enetcom/mecanum-ros2/build/mecanum_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/enetcom/mecanum-ros2/build/mecanum_navigation -- -j4 -l4
+[0.102s] Invoked command in '/home/enetcom/mecanum-ros2/build/mecanum_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/enetcom/mecanum-ros2/build/mecanum_navigation -- -j4 -l4
+[0.107s] Invoking command in '/home/enetcom/mecanum-ros2/build/mecanum_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/enetcom/mecanum-ros2/build/mecanum_navigation
+[0.127s] -- Install configuration: ""
+[0.127s] -- Execute custom install script
+[0.128s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/launch/mecanum_nav.launch.py
+[0.128s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/config/nav2.rviz
+[0.128s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/config/nav2_param.yaml
+[0.129s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/ament_index/resource_index/package_run_dependencies/mecanum_navigation
+[0.129s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/ament_index/resource_index/parent_prefix_path/mecanum_navigation
+[0.130s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/environment/ament_prefix_path.sh
+[0.130s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/environment/ament_prefix_path.dsv
+[0.131s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/environment/path.sh
+[0.132s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/environment/path.dsv
+[0.133s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/local_setup.bash
+[0.134s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/local_setup.sh
+[0.135s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/local_setup.zsh
+[0.135s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/local_setup.dsv
+[0.136s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/package.dsv
+[0.163s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/ament_index/resource_index/packages/mecanum_navigation
+[0.163s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/cmake/mecanum_navigationConfig.cmake
+[0.163s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/cmake/mecanum_navigationConfig-version.cmake
+[0.164s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/package.xml
+[0.190s] Invoked command in '/home/enetcom/mecanum-ros2/build/mecanum_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/enetcom/mecanum-ros2/build/mecanum_navigation

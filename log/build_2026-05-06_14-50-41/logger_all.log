@@ -1,0 +1,268 @@
+[1.074s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.074s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x72ce7196ded0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x72ce7196da20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x72ce7196da20>>, mixin_verb=('build',))
+[2.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.829s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.830s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.831s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/enetcom/mecanum-ros2'
+[2.834s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.836s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.837s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.839s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.840s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.841s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.842s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.843s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.843s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.944s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.946s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.947s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.948s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.949s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.951s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.952s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.953s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.954s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.954s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.954s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.955s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.956s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.956s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.956s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.956s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.957s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.957s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.957s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.957s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.957s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.957s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.957s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.958s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.958s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.958s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.959s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.959s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.961s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_localization) by extensions ['ignore', 'ignore_ament_install']
+[2.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_localization) by extension 'ignore'
+[2.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_localization) by extension 'ignore_ament_install'
+[2.966s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_localization) by extensions ['colcon_pkg']
+[2.967s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_localization) by extension 'colcon_pkg'
+[2.968s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_localization) by extensions ['colcon_meta']
+[2.968s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_localization) by extension 'colcon_meta'
+[2.969s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_localization) by extensions ['ros']
+[2.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_localization) by extension 'ros'
+[2.989s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mecanum_localization' with type 'ros.ament_cmake' and name 'mecanum_localization'
+[2.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_navigation) by extensions ['ignore', 'ignore_ament_install']
+[2.993s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_navigation) by extension 'ignore'
+[2.994s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_navigation) by extension 'ignore_ament_install'
+[2.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_navigation) by extensions ['colcon_pkg']
+[2.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_navigation) by extension 'colcon_pkg'
+[2.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_navigation) by extensions ['colcon_meta']
+[2.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_navigation) by extension 'colcon_meta'
+[2.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_navigation) by extensions ['ros']
+[3.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_navigation) by extension 'ros'
+[3.005s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mecanum_navigation' with type 'ros.ament_cmake' and name 'mecanum_navigation'
+[3.007s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechanum_description) by extensions ['ignore', 'ignore_ament_install']
+[3.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechanum_description) by extension 'ignore'
+[3.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechanum_description) by extension 'ignore_ament_install'
+[3.011s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechanum_description) by extensions ['colcon_pkg']
+[3.012s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechanum_description) by extension 'colcon_pkg'
+[3.013s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechanum_description) by extensions ['colcon_meta']
+[3.014s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechanum_description) by extension 'colcon_meta'
+[3.015s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechanum_description) by extensions ['ros']
+[3.015s] Level 1:colcon.colcon_core.package_identification:_identify(src/mechanum_description) by extension 'ros'
+[3.020s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mechanum_description' with type 'ros.ament_cmake' and name 'mechanum_description'
+[3.021s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.022s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.023s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.024s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.025s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[3.289s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 395 installed packages in /opt/ros/humble
+[3.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.764s] Level 5:colcon.colcon_core.verb:set package 'mecanum_localization' build argument 'cmake_args' from command line to 'None'
+[3.765s] Level 5:colcon.colcon_core.verb:set package 'mecanum_localization' build argument 'cmake_target' from command line to 'None'
+[3.765s] Level 5:colcon.colcon_core.verb:set package 'mecanum_localization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.766s] Level 5:colcon.colcon_core.verb:set package 'mecanum_localization' build argument 'cmake_clean_cache' from command line to 'False'
+[3.766s] Level 5:colcon.colcon_core.verb:set package 'mecanum_localization' build argument 'cmake_clean_first' from command line to 'False'
+[3.767s] Level 5:colcon.colcon_core.verb:set package 'mecanum_localization' build argument 'cmake_force_configure' from command line to 'False'
+[3.767s] Level 5:colcon.colcon_core.verb:set package 'mecanum_localization' build argument 'ament_cmake_args' from command line to 'None'
+[3.767s] Level 5:colcon.colcon_core.verb:set package 'mecanum_localization' build argument 'catkin_cmake_args' from command line to 'None'
+[3.767s] Level 5:colcon.colcon_core.verb:set package 'mecanum_localization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.767s] DEBUG:colcon.colcon_core.verb:Building package 'mecanum_localization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/enetcom/mecanum-ros2/build/mecanum_localization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/enetcom/mecanum-ros2/install/mecanum_localization', 'merge_install': False, 'path': '/home/enetcom/mecanum-ros2/src/mecanum_localization', 'symlink_install': False, 'test_result_base': None}
+[3.769s] Level 5:colcon.colcon_core.verb:set package 'mecanum_navigation' build argument 'cmake_args' from command line to 'None'
+[3.769s] Level 5:colcon.colcon_core.verb:set package 'mecanum_navigation' build argument 'cmake_target' from command line to 'None'
+[3.769s] Level 5:colcon.colcon_core.verb:set package 'mecanum_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.769s] Level 5:colcon.colcon_core.verb:set package 'mecanum_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[3.769s] Level 5:colcon.colcon_core.verb:set package 'mecanum_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[3.770s] Level 5:colcon.colcon_core.verb:set package 'mecanum_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[3.770s] Level 5:colcon.colcon_core.verb:set package 'mecanum_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[3.770s] Level 5:colcon.colcon_core.verb:set package 'mecanum_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[3.770s] Level 5:colcon.colcon_core.verb:set package 'mecanum_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.770s] DEBUG:colcon.colcon_core.verb:Building package 'mecanum_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/enetcom/mecanum-ros2/build/mecanum_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/enetcom/mecanum-ros2/install/mecanum_navigation', 'merge_install': False, 'path': '/home/enetcom/mecanum-ros2/src/mecanum_navigation', 'symlink_install': False, 'test_result_base': None}
+[3.775s] Level 5:colcon.colcon_core.verb:set package 'mechanum_description' build argument 'cmake_args' from command line to 'None'
+[3.775s] Level 5:colcon.colcon_core.verb:set package 'mechanum_description' build argument 'cmake_target' from command line to 'None'
+[3.776s] Level 5:colcon.colcon_core.verb:set package 'mechanum_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.777s] Level 5:colcon.colcon_core.verb:set package 'mechanum_description' build argument 'cmake_clean_cache' from command line to 'False'
+[3.778s] Level 5:colcon.colcon_core.verb:set package 'mechanum_description' build argument 'cmake_clean_first' from command line to 'False'
+[3.779s] Level 5:colcon.colcon_core.verb:set package 'mechanum_description' build argument 'cmake_force_configure' from command line to 'False'
+[3.780s] Level 5:colcon.colcon_core.verb:set package 'mechanum_description' build argument 'ament_cmake_args' from command line to 'None'
+[3.781s] Level 5:colcon.colcon_core.verb:set package 'mechanum_description' build argument 'catkin_cmake_args' from command line to 'None'
+[3.782s] Level 5:colcon.colcon_core.verb:set package 'mechanum_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.783s] DEBUG:colcon.colcon_core.verb:Building package 'mechanum_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/enetcom/mecanum-ros2/build/mechanum_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/enetcom/mecanum-ros2/install/mechanum_description', 'merge_install': False, 'path': '/home/enetcom/mecanum-ros2/src/mechanum_description', 'symlink_install': False, 'test_result_base': None}
+[3.785s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.787s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.789s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/enetcom/mecanum-ros2/src/mecanum_localization' with build type 'ament_cmake'
+[3.791s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/enetcom/mecanum-ros2/src/mecanum_localization'
+[3.806s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.806s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.807s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.839s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/enetcom/mecanum-ros2/src/mecanum_navigation' with build type 'ament_cmake'
+[3.839s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/enetcom/mecanum-ros2/src/mecanum_navigation'
+[3.840s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.841s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.869s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/enetcom/mecanum-ros2/src/mechanum_description' with build type 'ament_cmake'
+[3.872s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/enetcom/mecanum-ros2/src/mechanum_description'
+[3.874s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.874s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/enetcom/mecanum-ros2/build/mecanum_localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/enetcom/mecanum-ros2/src/mecanum_localization -DCMAKE_INSTALL_PREFIX=/home/enetcom/mecanum-ros2/install/mecanum_localization
+[3.998s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/enetcom/mecanum-ros2/build/mecanum_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/enetcom/mecanum-ros2/src/mecanum_navigation -DCMAKE_INSTALL_PREFIX=/home/enetcom/mecanum-ros2/install/mecanum_navigation
+[4.043s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/enetcom/mecanum-ros2/build/mechanum_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/enetcom/mecanum-ros2/src/mechanum_description -DCMAKE_INSTALL_PREFIX=/home/enetcom/mecanum-ros2/install/mechanum_description
+[5.382s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/enetcom/mecanum-ros2/build/mecanum_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/enetcom/mecanum-ros2/src/mecanum_navigation -DCMAKE_INSTALL_PREFIX=/home/enetcom/mecanum-ros2/install/mecanum_navigation
+[5.389s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/enetcom/mecanum-ros2/build/mecanum_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/enetcom/mecanum-ros2/build/mecanum_navigation -- -j4 -l4
+[5.716s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/enetcom/mecanum-ros2/build/mecanum_localization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/enetcom/mecanum-ros2/src/mecanum_localization -DCMAKE_INSTALL_PREFIX=/home/enetcom/mecanum-ros2/install/mecanum_localization
+[5.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/enetcom/mecanum-ros2/build/mecanum_localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/enetcom/mecanum-ros2/build/mecanum_localization -- -j4 -l4
+[5.774s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/enetcom/mecanum-ros2/build/mecanum_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/enetcom/mecanum-ros2/build/mecanum_navigation -- -j4 -l4
+[5.904s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/enetcom/mecanum-ros2/build/mecanum_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/enetcom/mecanum-ros2/build/mecanum_navigation
+[5.999s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/enetcom/mecanum-ros2/build/mecanum_localization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/enetcom/mecanum-ros2/build/mecanum_localization -- -j4 -l4
+[6.014s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/enetcom/mecanum-ros2/build/mecanum_localization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/enetcom/mecanum-ros2/build/mecanum_localization
+[6.087s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/enetcom/mecanum-ros2/build/mechanum_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/enetcom/mecanum-ros2/src/mechanum_description -DCMAKE_INSTALL_PREFIX=/home/enetcom/mecanum-ros2/install/mechanum_description
+[6.089s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/enetcom/mecanum-ros2/build/mechanum_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/enetcom/mecanum-ros2/build/mechanum_description -- -j4 -l4
+[6.104s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mecanum_navigation)
+[6.129s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/enetcom/mecanum-ros2/build/mecanum_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/enetcom/mecanum-ros2/build/mecanum_navigation
+[6.149s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_navigation' for CMake module files
+[6.155s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_navigation' for CMake config files
+[6.161s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_navigation', 'cmake_prefix_path')
+[6.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/hook/cmake_prefix_path.ps1'
+[6.168s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/hook/cmake_prefix_path.dsv'
+[6.169s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/hook/cmake_prefix_path.sh'
+[6.184s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_navigation/bin'
+[6.185s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_navigation/lib/pkgconfig/mecanum_navigation.pc'
+[6.185s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_navigation/lib/python3.10/site-packages'
+[6.186s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_navigation/bin'
+[6.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/package.ps1'
+[6.200s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/package.dsv'
+[6.204s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/package.sh'
+[6.213s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/package.bash'
+[6.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/package.zsh'
+[6.233s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/colcon-core/packages/mecanum_navigation)
+[6.244s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mecanum_navigation)
+[6.246s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_navigation' for CMake module files
+[6.250s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_navigation' for CMake config files
+[6.253s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_navigation', 'cmake_prefix_path')
+[6.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/hook/cmake_prefix_path.ps1'
+[6.274s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/hook/cmake_prefix_path.dsv'
+[6.283s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/hook/cmake_prefix_path.sh'
+[6.291s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_navigation/bin'
+[6.292s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_navigation/lib/pkgconfig/mecanum_navigation.pc'
+[6.294s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_navigation/lib/python3.10/site-packages'
+[6.297s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_navigation/bin'
+[6.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/package.ps1'
+[6.302s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/package.dsv'
+[6.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/package.sh'
+[6.325s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/package.bash'
+[6.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/package.zsh'
+[6.333s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/enetcom/mecanum-ros2/install/mecanum_navigation/share/colcon-core/packages/mecanum_navigation)
+[6.336s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mecanum_localization)
+[6.337s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_localization' for CMake module files
+[6.338s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/enetcom/mecanum-ros2/build/mecanum_localization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/enetcom/mecanum-ros2/build/mecanum_localization
+[6.348s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_localization' for CMake config files
+[6.352s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_localization', 'cmake_prefix_path')
+[6.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/hook/cmake_prefix_path.ps1'
+[6.355s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/hook/cmake_prefix_path.dsv'
+[6.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/hook/cmake_prefix_path.sh'
+[6.365s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_localization/bin'
+[6.368s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_localization/lib/pkgconfig/mecanum_localization.pc'
+[6.372s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_localization/lib/python3.10/site-packages'
+[6.373s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_localization/bin'
+[6.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/package.ps1'
+[6.378s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/package.dsv'
+[6.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/package.sh'
+[6.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/package.bash'
+[6.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/package.zsh'
+[6.397s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/enetcom/mecanum-ros2/install/mecanum_localization/share/colcon-core/packages/mecanum_localization)
+[6.399s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mecanum_localization)
+[6.400s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_localization' for CMake module files
+[6.401s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_localization' for CMake config files
+[6.402s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_localization', 'cmake_prefix_path')
+[6.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/hook/cmake_prefix_path.ps1'
+[6.411s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/hook/cmake_prefix_path.dsv'
+[6.417s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/hook/cmake_prefix_path.sh'
+[6.422s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_localization/bin'
+[6.423s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_localization/lib/pkgconfig/mecanum_localization.pc'
+[6.428s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_localization/lib/python3.10/site-packages'
+[6.432s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mecanum_localization/bin'
+[6.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/package.ps1'
+[6.435s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/package.dsv'
+[6.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/package.sh'
+[6.439s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/package.bash'
+[6.441s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mecanum_localization/share/mecanum_localization/package.zsh'
+[6.447s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/enetcom/mecanum-ros2/install/mecanum_localization/share/colcon-core/packages/mecanum_localization)
+[6.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/enetcom/mecanum-ros2/build/mechanum_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/enetcom/mecanum-ros2/build/mechanum_description -- -j4 -l4
+[6.473s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/enetcom/mecanum-ros2/build/mechanum_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/enetcom/mecanum-ros2/build/mechanum_description
+[6.652s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mechanum_description)
+[6.654s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mechanum_description' for CMake module files
+[6.657s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/enetcom/mecanum-ros2/build/mechanum_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/enetcom/mecanum-ros2/build/mechanum_description
+[6.664s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mechanum_description' for CMake config files
+[6.668s] Level 1:colcon.colcon_core.shell:create_environment_hook('mechanum_description', 'cmake_prefix_path')
+[6.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/hook/cmake_prefix_path.ps1'
+[6.671s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/hook/cmake_prefix_path.dsv'
+[6.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/hook/cmake_prefix_path.sh'
+[6.687s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mechanum_description/bin'
+[6.687s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mechanum_description/lib/pkgconfig/mechanum_description.pc'
+[6.689s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mechanum_description/lib/python3.10/site-packages'
+[6.694s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mechanum_description/bin'
+[6.697s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/package.ps1'
+[6.702s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/package.dsv'
+[6.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/package.sh'
+[6.705s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/package.bash'
+[6.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/package.zsh'
+[6.715s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/enetcom/mecanum-ros2/install/mechanum_description/share/colcon-core/packages/mechanum_description)
+[6.721s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mechanum_description)
+[6.722s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mechanum_description' for CMake module files
+[6.723s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mechanum_description' for CMake config files
+[6.724s] Level 1:colcon.colcon_core.shell:create_environment_hook('mechanum_description', 'cmake_prefix_path')
+[6.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/hook/cmake_prefix_path.ps1'
+[6.726s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/hook/cmake_prefix_path.dsv'
+[6.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/hook/cmake_prefix_path.sh'
+[6.735s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mechanum_description/bin'
+[6.736s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mechanum_description/lib/pkgconfig/mechanum_description.pc'
+[6.739s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mechanum_description/lib/python3.10/site-packages'
+[6.741s] Level 1:colcon.colcon_core.environment:checking '/home/enetcom/mecanum-ros2/install/mechanum_description/bin'
+[6.743s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/package.ps1'
+[6.746s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/package.dsv'
+[6.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/package.sh'
+[6.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/package.bash'
+[6.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/package.zsh'
+[6.767s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/enetcom/mecanum-ros2/install/mechanum_description/share/colcon-core/packages/mechanum_description)
+[6.770s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.780s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.781s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.782s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.843s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.843s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.844s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.940s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.941s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/enetcom/mecanum-ros2/install/local_setup.ps1'
+[6.947s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/enetcom/mecanum-ros2/install/_local_setup_util_ps1.py'
+[6.960s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/enetcom/mecanum-ros2/install/setup.ps1'
+[6.971s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/enetcom/mecanum-ros2/install/local_setup.sh'
+[6.975s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/enetcom/mecanum-ros2/install/_local_setup_util_sh.py'
+[6.978s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/enetcom/mecanum-ros2/install/setup.sh'
+[6.990s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/enetcom/mecanum-ros2/install/local_setup.bash'
+[6.996s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/enetcom/mecanum-ros2/install/setup.bash'
+[7.006s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/enetcom/mecanum-ros2/install/local_setup.zsh'
+[7.010s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/enetcom/mecanum-ros2/install/setup.zsh'
