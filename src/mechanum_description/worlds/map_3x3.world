@@ -53,48 +53,83 @@
       <link name='meuble_droite'><pose>2.45 0.5 0.75 0 -0 0</pose><visual name='v'><geometry><box><size>0.5 1.8 1.5</size></box></geometry><material><ambient>0.2 0.2 0.2 1</ambient></material></visual><collision name='c'><geometry><box><size>0.5 1.8 1.5</size></box></geometry></collision></link>
       <link name='bureau_pc_bas'><pose>-2.55 -1.6 0.4 0 -0 0</pose><visual name='v'><geometry><box><size>0.75 0.8 0.8</size></box></geometry><material><ambient>0.1 0.1 0.3 1</ambient></material></visual><collision name='c'><geometry><box><size>0.75 0.8 0.8</size></box></geometry></collision></link>
 
-      <!-- TABLES RONDES SURÉLEVÉES -->
+      <!-- TABLES RONDES - cylindres pleins du sol au plateau (hauteur totale 0.79m) -->
+      <!-- Le lidar à 0.15m voit maintenant le cylindre plein, pas juste un pied de 5cm -->
       <link name='table_ronde_1'>
-        <pose>-1.2 0.8 0.75 0 -0 0</pose>
-        <visual name='plateau'><geometry><cylinder><radius>0.45</radius><length>0.04</length></cylinder></geometry><material><ambient>0.6 0.4 0.2 1</ambient></material></visual>
-        <collision name='c'><geometry><cylinder><radius>0.45</radius><length>0.04</length></cylinder></geometry></collision>
-        <visual name='pied'><pose>0 0 -0.37 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>0.75</length></cylinder></geometry></visual>
+        <pose>-1.2 0.8 0 0 -0 0</pose>
+        <!-- Plateau visible en haut -->
+        <visual name='plateau'>
+          <pose>0 0 0.77 0 0 0</pose>
+          <geometry><cylinder><radius>0.45</radius><length>0.04</length></cylinder></geometry>
+          <material><ambient>0.6 0.4 0.2 1</ambient></material>
+        </visual>
+        <!-- Pied visible (décoratif) -->
+        <visual name='pied'>
+          <pose>0 0 0.38 0 0 0</pose>
+          <geometry><cylinder><radius>0.05</radius><length>0.75</length></cylinder></geometry>
+          <material><ambient>0.4 0.3 0.1 1</ambient></material>
+        </visual>
+        <!-- Collision pleine = cylindre du sol au plateau, lidar le voit à 0.15m -->
+        <collision name='c_plein'>
+          <pose>0 0 0.38 0 0 0</pose>
+          <geometry><cylinder><radius>0.45</radius><length>0.75</length></cylinder></geometry>
+        </collision>
       </link>
 
       <link name='table_ronde_2'>
-        <pose>1.2 0.8 0.75 0 -0 0</pose>
-        <visual name='plateau'><geometry><cylinder><radius>0.45</radius><length>0.04</length></cylinder></geometry><material><ambient>0.6 0.4 0.2 1</ambient></material></visual>
-        <collision name='c'><geometry><cylinder><radius>0.45</radius><length>0.04</length></cylinder></geometry></collision>
-        <visual name='pied'><pose>0 0 -0.37 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>0.75</length></cylinder></geometry></visual>
+        <pose>1.2 0.8 0 0 -0 0</pose>
+        <visual name='plateau'>
+          <pose>0 0 0.77 0 0 0</pose>
+          <geometry><cylinder><radius>0.45</radius><length>0.04</length></cylinder></geometry>
+          <material><ambient>0.6 0.4 0.2 1</ambient></material>
+        </visual>
+        <visual name='pied'>
+          <pose>0 0 0.38 0 0 0</pose>
+          <geometry><cylinder><radius>0.05</radius><length>0.75</length></cylinder></geometry>
+          <material><ambient>0.4 0.3 0.1 1</ambient></material>
+        </visual>
+        <collision name='c_plein'>
+          <pose>0 0 0.38 0 0 0</pose>
+          <geometry><cylinder><radius>0.45</radius><length>0.75</length></cylinder></geometry>
+        </collision>
       </link>
 
       <link name='table_ronde_bas'>
-        <pose>-2.2 -2.6 0.75 0 -0 0</pose>
-        <visual name='plateau'><geometry><cylinder><radius>0.35</radius><length>0.04</length></cylinder></geometry><material><ambient>0.6 0.4 0.2 1</ambient></material></visual>
-        <collision name='c'><geometry><cylinder><radius>0.35</radius><length>0.04</length></cylinder></geometry></collision>
-        <visual name='pied'><pose>0 0 -0.37 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>0.75</length></cylinder></geometry></visual>
+        <pose>-2.2 -2.6 0 0 -0 0</pose>
+        <visual name='plateau'>
+          <pose>0 0 0.77 0 0 0</pose>
+          <geometry><cylinder><radius>0.35</radius><length>0.04</length></cylinder></geometry>
+          <material><ambient>0.6 0.4 0.2 1</ambient></material>
+        </visual>
+        <visual name='pied'>
+          <pose>0 0 0.38 0 0 0</pose>
+          <geometry><cylinder><radius>0.05</radius><length>0.75</length></cylinder></geometry>
+          <material><ambient>0.4 0.3 0.1 1</ambient></material>
+        </visual>
+        <collision name='c_plein'>
+          <pose>0 0 0.38 0 0 0</pose>
+          <geometry><cylinder><radius>0.35</radius><length>0.75</length></cylinder></geometry>
+        </collision>
       </link>
 
-      <!-- GRANDE TABLE RECTANGULAIRE (Anciennement bloc noir bas-droite) -->
+      <!-- GRANDE TABLE RECTANGULAIRE - boîte pleine du sol au plateau -->
       <link name='table_cours_principale'>
-        <pose>1.5 -1.8 0.75 0 -0 0</pose>
+        <pose>1.5 -1.8 0 0 -0 0</pose>
         <visual name='plateau'>
+          <pose>0 0 0.77 0 0 0</pose>
           <geometry><box><size>2.2 1.2 0.05</size></box></geometry>
           <material><ambient>0.15 0.15 0.15 1</ambient></material>
         </visual>
-        <collision name='collision_plateau'>
-          <geometry><box><size>2.2 1.2 0.05</size></box></geometry>
+        <!-- Pieds décoratifs visibles -->
+        <visual name='pied1'><pose>1.0  0.5 0.38 0 0 0</pose><geometry><box><size>0.05 0.05 0.75</size></box></geometry><material><ambient>0.2 0.2 0.2 1</ambient></material></visual>
+        <visual name='pied2'><pose>-1.0  0.5 0.38 0 0 0</pose><geometry><box><size>0.05 0.05 0.75</size></box></geometry><material><ambient>0.2 0.2 0.2 1</ambient></material></visual>
+        <visual name='pied3'><pose>1.0 -0.5 0.38 0 0 0</pose><geometry><box><size>0.05 0.05 0.75</size></box></geometry><material><ambient>0.2 0.2 0.2 1</ambient></material></visual>
+        <visual name='pied4'><pose>-1.0 -0.5 0.38 0 0 0</pose><geometry><box><size>0.05 0.05 0.75</size></box></geometry><material><ambient>0.2 0.2 0.2 1</ambient></material></visual>
+        <!-- Collision pleine = boîte du sol au plateau, lidar la voit à 0.15m -->
+        <collision name='c_plein'>
+          <pose>0 0 0.38 0 0 0</pose>
+          <geometry><box><size>2.2 1.2 0.75</size></box></geometry>
         </collision>
-        <!-- 4 Pieds fins pour laisser passer le robot -->
-        <visual name='pied1'><pose>1.0 0.5 -0.37 0 0 0</pose><geometry><box><size>0.05 0.05 0.75</size></box></geometry></visual>
-        <visual name='pied2'><pose>-1.0 0.5 -0.37 0 0 0</pose><geometry><box><size>0.05 0.05 0.75</size></box></geometry></visual>
-        <visual name='pied3'><pose>1.0 -0.5 -0.37 0 0 0</pose><geometry><box><size>0.05 0.05 0.75</size></box></geometry></visual>
-        <visual name='pied4'><pose>-1.0 -0.5 -0.37 0 0 0</pose><geometry><box><size>0.05 0.05 0.75</size></box></geometry></visual>
-        <!-- Collisions des pieds pour le Lidar -->
-        <collision name='c1'><pose>1.0 0.5 -0.37 0 0 0</pose><geometry><box><size>0.05 0.05 0.75</size></box></geometry></collision>
-        <collision name='c2'><pose>-1.0 0.5 -0.37 0 0 0</pose><geometry><box><size>0.05 0.05 0.75</size></box></geometry></collision>
-        <collision name='c3'><pose>1.0 -0.5 -0.37 0 0 0</pose><geometry><box><size>0.05 0.05 0.75</size></box></geometry></collision>
-        <collision name='c4'><pose>-1.0 -0.5 -0.37 0 0 0</pose><geometry><box><size>0.05 0.05 0.75</size></box></geometry></collision>
       </link>
     </model>
 

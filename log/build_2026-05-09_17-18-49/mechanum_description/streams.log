@@ -1,0 +1,55 @@
+[0.026s] Invoking command in '/home/enetcom/mecanum-ros2/build/mechanum_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/enetcom/mecanum-ros2/build/mechanum_description -- -j4 -l4
+[0.139s] Invoked command in '/home/enetcom/mecanum-ros2/build/mechanum_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/enetcom/mecanum-ros2/build/mechanum_description -- -j4 -l4
+[0.142s] Invoking command in '/home/enetcom/mecanum-ros2/build/mechanum_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/enetcom/mecanum-ros2/build/mechanum_description
+[0.154s] -- Install configuration: ""
+[0.155s] -- Execute custom install script
+[0.159s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/azure_kinect.dae
+[0.160s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/chain_link1.stl
+[0.161s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/chain_link2.stl
+[0.161s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/chain_link3.stl
+[0.161s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/chain_link4.stl
+[0.162s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/chain_link5.stl
+[0.162s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/chain_link_grip_l.stl
+[0.162s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/chain_link_grip_r.stl
+[0.163s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/intel_realsense/visual/d435.stl
+[0.163s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/mecanum_a.dae
+[0.163s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/mecanum_b.dae
+[0.164s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/rosmaster_x3/visual/back_left_wheel_X3.STL
+[0.164s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/rosmaster_x3/visual/back_right_wheel_X3.STL
+[0.165s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/rosmaster_x3/visual/base_link_X3.STL
+[0.165s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/rosmaster_x3/visual/front_left_wheel_X3.STL
+[0.166s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/rosmaster_x3/visual/front_right_wheel_X3.STL
+[0.166s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/rosmaster_x3/visual/laser_link.STL
+[0.167s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/rplidar/rplidar_s2.stl
+[0.167s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/meshes/wpb_mani_base.dae
+[0.170s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/urdf/materials.xacro
+[0.171s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/urdf/mech/mecanum_wheel.urdf.xacro
+[0.171s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/urdf/mech/rosmaster_x3_base.urdf.xacro
+[0.171s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/urdf/open_manipulator_x.gazebo.xacro
+[0.172s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/urdf/open_manipulator_x.transmission.xacro
+[0.172s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/urdf/open_manipulator_x.urdf.xacro
+[0.173s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/urdf/robots/rosmaster_x3.urdf.xacro
+[0.174s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/urdf/sensors/lidar.urdf.xacro
+[0.174s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/urdf/wpb_mani.urdf.xacro
+[0.174s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/urdf/wpb_ros2control.xacro
+[0.176s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/launch/gazebo.launch.py
+[0.177s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/launch/rviz_display.launch.py
+[0.177s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/rviz/mechanum_rviz.rviz
+[0.178s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/config/mechanum.yaml
+[0.181s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/worlds/map_3x3.world
+[0.181s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/ament_index/resource_index/package_run_dependencies/mechanum_description
+[0.182s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/ament_index/resource_index/parent_prefix_path/mechanum_description
+[0.183s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/environment/ament_prefix_path.sh
+[0.183s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/environment/ament_prefix_path.dsv
+[0.184s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/environment/path.sh
+[0.185s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/environment/path.dsv
+[0.185s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/local_setup.bash
+[0.185s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/local_setup.sh
+[0.186s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/local_setup.zsh
+[0.187s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/local_setup.dsv
+[0.187s] -- Symlinking: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/package.dsv
+[0.198s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/ament_index/resource_index/packages/mechanum_description
+[0.198s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/cmake/mechanum_descriptionConfig.cmake
+[0.199s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/cmake/mechanum_descriptionConfig-version.cmake
+[0.199s] -- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mechanum_description/share/mechanum_description/package.xml
+[0.214s] Invoked command in '/home/enetcom/mecanum-ros2/build/mechanum_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/enetcom/mecanum-ros2/build/mechanum_description

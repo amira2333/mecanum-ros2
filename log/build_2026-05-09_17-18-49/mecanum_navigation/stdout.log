@@ -1,0 +1,20 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/launch/mecanum_nav.launch.py
+-- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/config/nav2.rviz
+-- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/config/nav2_param.yaml
+-- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/ament_index/resource_index/package_run_dependencies/mecanum_navigation
+-- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/ament_index/resource_index/parent_prefix_path/mecanum_navigation
+-- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/environment/path.sh
+-- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/environment/path.dsv
+-- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/local_setup.bash
+-- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/local_setup.sh
+-- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/local_setup.zsh
+-- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/local_setup.dsv
+-- Symlinking: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/package.dsv
+-- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/ament_index/resource_index/packages/mecanum_navigation
+-- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/cmake/mecanum_navigationConfig.cmake
+-- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/cmake/mecanum_navigationConfig-version.cmake
+-- Up-to-date symlink: /home/enetcom/mecanum-ros2/install/mecanum_navigation/share/mecanum_navigation/package.xml
